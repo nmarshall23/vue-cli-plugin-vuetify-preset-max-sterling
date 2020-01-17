@@ -4,7 +4,7 @@ const {
 } = require("@vuetify/cli-plugin-utils");
 
 module.exports = api => {
-  VuetifyPresetGenerator(api, "maxSterling", () => {
-    injectGoogleFontLink(api, "Exo+2:500,700");
+  VuetifyPresetGenerator(api, "max-sterling", () => {
+    injectGoogleFontLink(api, "Exo+2:400,500,700");
   });
 };

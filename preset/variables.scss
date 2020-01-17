@@ -2,37 +2,32 @@
 
 // maxSterling specific variables
 $maxSterling-font-size: 16;
-$maxSterling-font-weight-normal: 500;
+$maxSterling-font-weight-normal: 400;
+$maxSterling-font-weight-medium: 500;
 $maxSterling-font-weight-bold: 700;
 
-$maxSterling-accent-color: #442c2e;
-$maxSterling-primary-color: #fedbd0;
-
-$maxSterling-chip-active-border-color: #8f8081;
-$maxSterling-chip-border-radius: 8px;
-$maxSterling-chip-border: 2px solid #fdd8d1;
-$maxSterling-chip-font-weight: 500;
-$maxSterling-chip-padding: 0 9px;
-$maxSterling-tabs-slider-border-color: #eaa4a4;
-$maxSterling-toolbar-background-color: #c28672;
+$maxSterling-theme-light-accent-color: #7986CB;
+$maxSterling-theme-light-primary-color: #78909C;
+$maxSterling-theme-light--color: #78909C;
 
 
 
 // Preset variables
-$body-font-family: "Rubik", sans-serif;
-$btn-font-weight: 500;
-$border-radius-root: 0;
+$body-font-family: "Exo 2", sans-serif;
+$heading-font-family: "Exo 2", sans-serif;
+$btn-font-weight: $maxSterling-font-weight-medium;
+// $border-radius-root: 0;
 $chip-line-height: 1.5;
 
 $headings: (
   "h1": (
-    "font-family": $body-font-family,
+    "font-family": $heading-font-family,
     "letter-spacing": initial,
     "size": #{96 / $maxSterling-font-size}rem,
     "weight": $maxSterling-font-weight-normal
   ),
   "h2": (
-    "font-family": $body-font-family,
+    "font-family": $heading-font-family,
     "letter-spacing": initial,
     "size": #{60 / $maxSterling-font-size}rem,
     "weight": $maxSterling-font-weight-normal
@@ -50,28 +45,29 @@ $headings: (
     "weight": $maxSterling-font-weight-normal
   ),
   "h5": (
-    "font-family": $body-font-family,
+    "font-family": $heading-font-family,
     "letter-spacing": initial,
     "size": #{24 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-bold
+    "weight": $maxSterling-font-weight-normal
   ),
   "h6": (
-    "font-family": $body-font-family,
+    "font-family": $heading-font-family,
     "letter-spacing": initial,
     "size": #{20 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-bold
+    "weight": $maxSterling-font-weight-medium
   ),
+  
   "subtitle-1": (
     "font-family": $body-font-family,
     "letter-spacing": initial,
     "size": #{16 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-bold
+    "weight": $maxSterling-font-weight-normal
   ),
   "subtitle-2": (
-    "font-family": $body-font-family,
+    "font-family": $heading-font-family,
     "letter-spacing": initial,
     "size": #{14 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-bold
+    "weight": $maxSterling-font-weight-medium
   ),
   "body-1": (
     "font-family": $heading-font-family,
@@ -86,7 +82,7 @@ $headings: (
     "weight": $maxSterling-font-weight-normal
   ),
   "caption": (
-    "font-family": $body-font-family,
+    "font-family": $heading-font-family,
     "letter-spacing": initial,
     "size": #{12 / $maxSterling-font-size}rem,
     "weight": $maxSterling-font-weight-normal
@@ -98,17 +94,24 @@ $headings: (
     "weight": $maxSterling-font-weight-normal
   )
 );
-$icon-sizes: (
-  "default": (
-    "height": 36
-  )
-);
+
+// $icon-sizes: (
+//   "default": (
+//     "height": 36
+//   )
+// );
 $material-light: (
-  "status-bar": (
-    "regular": #f0cac0
-  ),
-  "background": #fedbd0,
-  "chips": transparent
+  // "status-bar": (
+  //  "regular": #f0cac0
+  //),
+  'app-bar': map-get($blue, 'lighten-2'),
+  'background': map-get($grey, 'lighten-5'),
+
+  // "chips": transparent
+);
+$material-dark: (
+  'app-bar': map-get($blue, 'darken-3'),
+  'background': map-get($indigo, 'darken-4'),
 );
 // $tabs-item-focus-opacity: 0;
 // $tabs-item-hover-opacity: 0;

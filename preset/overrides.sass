@@ -1,1 +1,17 @@
 @import './variables.scss'
+
+.v-toolbar__title
+  font-family: $heading-font-family
+
+.theme--light
+  .v-sheet.v-toolbar,
+  &.v-sheet.v-toolbar
+    background-color: map-get($blue, 'lighten-1')
+  .v-list
+    .v-list-item--active
+      color: map-get($indigo, 'darken-3')
+
+.theme--dark
+  &.v-sheet.v-toolbar,
+  .v-sheet.v-toolbar
+    background-color: map-get($blue, 'darken-3')
