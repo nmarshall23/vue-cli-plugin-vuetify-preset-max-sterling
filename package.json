@@ -2,10 +2,15 @@
   "name": "vue-cli-plugin-vuetify-preset-max-sterling",
   "version": "1.0.0",
   "description": "Material Design Max-Sterling Theme",
+  "homepage": "https://github.com/nmarshall23/vue-cli-plugin-vuetify-preset-max-sterling#readme",
   "main": "index.js",
   "author": "Nicholas Marshall",
   "license": "MIT",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmarshall23/vue-cli-plugin-vuetify-preset-max-sterling.git"
+  },
   "dependencies": {
     "@vuetify/cli-plugin-utils": "^0.0.4"
   }
