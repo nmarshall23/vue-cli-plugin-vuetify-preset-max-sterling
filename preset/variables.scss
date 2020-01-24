@@ -6,11 +6,9 @@ $maxSterling-font-weight-normal: 400;
 $maxSterling-font-weight-medium: 500;
 $maxSterling-font-weight-bold: 700;
 
-$maxSterling-theme-light-accent-color: #7986CB;
-$maxSterling-theme-light-primary-color: #78909C;
-$maxSterling-theme-light--color: #78909C;
-
-
+$maxSterling-theme-light-accent-color: #7986cb;
+$maxSterling-theme-light-primary-color: #78909c;
+$maxSterling-theme-light--color: #78909c;
 
 // Preset variables
 $body-font-family: "Exo 2", sans-serif;
@@ -20,79 +18,82 @@ $btn-font-weight: $maxSterling-font-weight-medium;
 $chip-line-height: 1.5;
 
 $headings: (
-  "h1": (
-    "font-family": $heading-font-family,
-    "letter-spacing": initial,
-    "size": #{96 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-normal
-  ),
-  "h2": (
-    "font-family": $heading-font-family,
-    "letter-spacing": initial,
-    "size": #{60 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-normal
-  ),
-  "h3": (
-    "font-family": $heading-font-family,
-    "letter-spacing": initial,
-    "size": #{48 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-normal
-  ),
-  "h4": (
-    "font-family": $body-font-family,
-    "letter-spacing": initial,
-    "size": #{34 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-normal
-  ),
-  "h5": (
-    "font-family": $heading-font-family,
-    "letter-spacing": initial,
-    "size": #{24 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-normal
-  ),
-  "h6": (
-    "font-family": $heading-font-family,
-    "letter-spacing": initial,
-    "size": #{20 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-medium
-  ),
-  
-  "subtitle-1": (
-    "font-family": $body-font-family,
-    "letter-spacing": initial,
-    "size": #{16 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-normal
-  ),
-  "subtitle-2": (
-    "font-family": $heading-font-family,
-    "letter-spacing": initial,
-    "size": #{14 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-medium
-  ),
-  "body-1": (
-    "font-family": $heading-font-family,
-    "letter-spacing": initial,
-    "size": #{16 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-normal
-  ),
-  "body-2": (
-    "font-family": $body-font-family,
-    "letter-spacing": initial,
-    "size": #{14 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-normal
-  ),
-  "caption": (
-    "font-family": $heading-font-family,
-    "letter-spacing": initial,
-    "size": #{12 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-normal
-  ),
-  "overline": (
-    "font-family": $body-font-family,
-    "letter-spacing": initial,
-    "size": #{14 / $maxSterling-font-size}rem,
-    "weight": $maxSterling-font-weight-normal
-  )
+    "h1": (
+      "font-family": $heading-font-family,
+      "letter-spacing": initial,
+      "size": #{96 / $maxSterling-font-size}rem,
+      "weight": $maxSterling-font-weight-normal
+    ),
+    "h2": (
+      "font-family": $heading-font-family,
+      "letter-spacing": initial,
+      "size": #{60 / $maxSterling-font-size}rem,
+      "weight": $maxSterling-font-weight-normal
+    ),
+    "h3": (
+      "font-family": $heading-font-family,
+      "letter-spacing": initial,
+      "size": #{48 / $maxSterling-font-size}rem,
+      "weight": $maxSterling-font-weight-normal
+    ),
+    "h4": (
+      "font-family": $body-font-family,
+      "letter-spacing": initial,
+      "size": #{34 / $maxSterling-font-size}rem,
+      "weight": $maxSterling-font-weight-normal
+    ),
+    "h5": (
+      "font-family": $heading-font-family,
+      "letter-spacing": initial,
+      "size": #{24 / $maxSterling-font-size}rem,
+      "weight": $maxSterling-font-weight-normal
+    ),
+    "h6": (
+      "font-family": $heading-font-family,
+      "letter-spacing": initial,
+      "size": #{20 / $maxSterling-font-size}rem,
+      "weight": $maxSterling-font-weight-medium
+    ),
+    "subtitle-1": (
+      "font-family": $body-font-family,
+      "letter-spacing": initial,
+      "size": #{16 / $maxSterling-font-size}rem,
+      "weight": $maxSterling-font-weight-normal
+    ),
+    "subtitle-2": (
+      "font-family": $heading-font-family,
+      "letter-spacing": initial,
+      "size": #{14 / $maxSterling-font-size}rem,
+      "weight": $maxSterling-font-weight-medium
+    ),
+    "body-1": (
+      "font-family": $heading-font-family,
+      'letter-spacing': .03125em,
+      'line-height': 1.5rem,
+      "size": #{16 / $maxSterling-font-size}rem,
+      "weight": $maxSterling-font-weight-normal
+    ),
+    "body-2": (
+      "font-family": $body-font-family,
+      'letter-spacing': .0178571429em,
+      'line-height': 1.25rem,
+      "size": #{14 / $maxSterling-font-size}rem,
+      "weight": $maxSterling-font-weight-normal
+    ),
+    "caption": (
+      "font-family": $heading-font-family,
+      'letter-spacing': .0333333333em,
+      'line-height': 1.25rem,
+      "size": #{12 / $maxSterling-font-size}rem,
+      "weight": $maxSterling-font-weight-normal
+    ),
+    "overline": (
+      "font-family": $body-font-family,
+      'letter-spacing': .1666666667em,
+      'line-height': 1rem,
+      "size": #{10 / $maxSterling-font-size}rem,
+      "weight": $maxSterling-font-weight-normal
+    )
 );
 
 // $icon-sizes: (
@@ -102,16 +103,15 @@ $headings: (
 // );
 $material-light: (
   // "status-bar": (
-  //  "regular": #f0cac0
-  //),
-  'app-bar': map-get($blue, 'lighten-2'),
-  'background': map-get($grey, 'lighten-5'),
-
-  // "chips": transparent
+    //  "regular": #f0cac0
+    //),
+    "app-bar": map-get($blue, "lighten-2"),
+  "background": map-get($grey, "lighten-5"),
+  //"chips": transparent
 );
 $material-dark: (
-  'app-bar': map-get($blue, 'darken-3'),
-  'background': map-get($indigo, 'darken-4'),
+  "app-bar": map-get($blue, "darken-3"),
+  "background": map-get($indigo, "darken-4")
 );
 // $tabs-item-focus-opacity: 0;
 // $tabs-item-hover-opacity: 0;
