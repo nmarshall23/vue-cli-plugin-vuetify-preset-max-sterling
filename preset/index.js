@@ -5,12 +5,12 @@ const preset = {
     dark: false,
     themes: {
       light: {
-        primary: "#7986CB", //indigo lighten-2
-        secondary: "#78909C", //blue-grey lighten-1
+        primary: '#7986CB', //indigo lighten-2
+        secondary: '#0097A7', // cyan darken-2
       },
       dark: {
         primary: '#3F51B5', // indigo 
-        secondary: '#607D8B', // blue-grey 
+        secondary: '#0097A7', // cyan darken-2
       }
     }
   }
