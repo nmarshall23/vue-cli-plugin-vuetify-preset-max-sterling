@@ -105,13 +105,17 @@ $material-light: (
   // "status-bar": (
     //  "regular": #f0cac0
     //),
-    "app-bar": map-get($blue, "lighten-2"),
+  "app-bar": map-get($blue, "darken-1"),
   "background": map-get($grey, "lighten-5"),
+  'toolbar': map-get($blue, 'lighten-1'),
+  'grey-bg': map-get($grey, 'lighten-3'),
   //"chips": transparent
 );
 $material-dark: (
-  "app-bar": map-get($blue, "darken-3"),
-  "background": map-get($indigo, "darken-4")
+  "app-bar": map-get($indigo, "darken-3"),
+  'toolbar': map-get($blue, 'darken-3'),
+  'grey-bg': map-get($grey, 'lighten-3'),
+  // "background": map-get($indigo, "darken-4")
 );
 // $tabs-item-focus-opacity: 0;
 // $tabs-item-hover-opacity: 0;

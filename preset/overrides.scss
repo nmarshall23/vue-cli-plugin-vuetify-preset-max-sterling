@@ -1,0 +1,37 @@
+@import "./variables.scss";
+
+.v-toolbar__title {
+  font-family: $heading-font-family;
+}
+.v-btn:not(.v-size--small):not(.v-size--x-small) {
+  font-variant: small-caps;
+  text-transform: unset;
+}
+
+@include theme("v-app-bar.v-toolbar.v-sheet") using ($material) {
+  background-color: map-get($material, "app-bar");
+}
+
+@include theme(v-btn) using ($material) {
+  &:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
+    background-color: map-get($material, "grey-bg");
+  }
+  &.v-btn--disabled:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
+    background-color: map-get($grey, 'lighten-2') !important;
+  }
+  &.v-btn--disabled .v-icon {
+    background-color: map-get($grey, 'lighten-2') !important;
+  }
+}
+
+
+// @include theme(v-list-item) using ($material) {
+//   v-list-item__action-text {
+//     color: map-get($indigo, "darken-3");
+//     text-shadow: 2px 2px 2px map-get($grey, "darken-1");
+//   }
+// }
+// @include theme("v-list-item.v-list-item--active") using ($material) {
+//   color: map-get($indigo, "darken-3");
+//   filter: drop-shadow(2px 2px 2px map-get($grey, "darken-1"));
+// }
