@@ -35,3 +35,35 @@
 //   color: map-get($indigo, "darken-3");
 //   filter: drop-shadow(2px 2px 2px map-get($grey, "darken-1"));
 // }
+
+.v-input--thin-filter.v-input--dense.v-text-field--outlined.v-text-field {
+  font-size: 13px;
+  font-weight: 500;
+  // stylelint-disable-next-line
+    > .v-input__control > .v-input__slot {
+      height: 22px;
+      min-height: 22px;
+      padding-right: 0;
+      padding-left: 8px;
+      > .v-input__append-inner {
+          align-self: center;
+          margin-top: 0;
+      }
+    }
+    .v-select__slot {
+      > .v-select__selections {
+        padding: 0;
+        .v-select__selection--comma {
+          margin: 0;
+        }
+        input {
+          padding: 0;
+        }
+      }
+      > .v-input__append-inner {
+        align-self: center;
+        padding-left: 0;
+        margin-top: 0;
+      }
+    }
+}
