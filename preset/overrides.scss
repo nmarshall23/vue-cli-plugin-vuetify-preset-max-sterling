@@ -17,13 +17,12 @@
     background-color: map-get($material, "grey-bg");
   }
   &.v-btn--disabled:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
-    background-color: map-get($grey, 'lighten-2') !important;
+    background-color: map-get($grey, "lighten-2") !important;
   }
-  &.v-btn--disabled .v-icon {
-    background-color: map-get($grey, 'lighten-2') !important;
-  }
+  // &.v-btn--disabled .v-icon {
+  //   background-color: map-get($grey, 'lighten-2') !important;
+  // }
 }
-
 
 // @include theme(v-list-item) using ($material) {
 //   v-list-item__action-text {
@@ -40,30 +39,52 @@
   font-size: 13px;
   font-weight: 500;
   // stylelint-disable-next-line
-    > .v-input__control > .v-input__slot {
-      height: 22px;
-      min-height: 22px;
-      padding-right: 0;
-      padding-left: 8px;
-      > .v-input__append-inner {
-          align-self: center;
-          margin-top: 0;
-      }
+  > .v-input__control > .v-input__slot {
+    height: 22px;
+    min-height: 22px;
+    padding-right: 0;
+    padding-left: 8px;
+    > .v-input__append-inner {
+      align-self: center;
+      margin-top: 0;
     }
-    .v-select__slot {
-      > .v-select__selections {
+  }
+  .v-select__slot {
+    > .v-select__selections {
+      padding: 0;
+      .v-select__selection--comma {
+        margin: 0;
+      }
+      input {
         padding: 0;
-        .v-select__selection--comma {
-          margin: 0;
-        }
-        input {
-          padding: 0;
-        }
-      }
-      > .v-input__append-inner {
-        align-self: center;
-        padding-left: 0;
-        margin-top: 0;
       }
     }
+    > .v-input__append-inner {
+      align-self: center;
+      padding-left: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+.headline--tab-outline {
+  border-top-left-radius: $border-radius-root;
+  border-top-right-radius: $border-radius-root;
+  padding-bottom: $spacer / 2;
+  padding-left: $container-padding-x;
+  padding-right: $container-padding-x;
+
+  white-space: nowrap;
+}
+
+@include theme(v-application) using ($material) {
+  .headline--tab-outline {
+    // background-color: map-get($material, "cards");
+    background-color: map-get($grey, "lighten-4");
+    // color: map-deep-get($material, 'text', 'primary');
+    $maxSterling-border: thin solid map-get($material, "dividers");
+    border-top: $maxSterling-border;
+    border-left: $maxSterling-border;
+    border-right: $maxSterling-border;
+  }
 }

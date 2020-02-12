@@ -109,12 +109,16 @@ $material-light: (
   "background": map-get($grey, "lighten-5"),
   'toolbar': map-get($blue, 'lighten-1'),
   'grey-bg': map-get($grey, 'lighten-3'),
+  'cards': map-get($shades, 'white'),
+  'dividers': rgba(map-get($shades, 'black'), 0.12)
   //"chips": transparent
 );
 $material-dark: (
   "app-bar": map-get($indigo, "darken-3"),
   'toolbar': map-get($blue, 'darken-3'),
   'grey-bg': map-get($grey, 'lighten-3'),
+  'cards': #1E1E1E,
+  'dividers': rgba(map-get($shades, 'white'), 0.12)
   // "background": map-get($indigo, "darken-4")
 );
 // $tabs-item-focus-opacity: 0;
